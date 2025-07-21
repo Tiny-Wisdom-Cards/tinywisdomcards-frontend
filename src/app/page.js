@@ -1,8 +1,10 @@
 import About from "@/components/About";
+import CardOfTheDay from "@/components/CardOfTheDay";
 import CtaSection from "@/components/CTA";
 import Discover from "@/components/Discover";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Partners from "@/components/Partners";
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
       <Discover />
       <CtaSection />
       <About />
+      <CardOfTheDay />
+      <Partners />
     </>
   );
 }
