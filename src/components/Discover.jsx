@@ -4,7 +4,7 @@ import DiscoverDeck from "./DiscoverDeck";
 const Discover = () => {
   return (
     <section className="py-10 px-2 bg-primary">
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-[1280px] mx-auto">
         <div>
           <div className="relative pb-7">
             <h2 className="text-3xl md:text-6xl text-white font-medium text-center">

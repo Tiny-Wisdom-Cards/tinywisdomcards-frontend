@@ -3,7 +3,7 @@ import FlippableCard from "./FlippableCard";
 const CardOfTheDay = () => {
   return (
     <section className="bg-primary-light py-8 px-2 md:px-8">
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-[1280px] mx-auto">
         <div className="relative pb-7">
           <h2 className="text-3xl md:text-6xl text-white font-medium text-center">
             Card of the Day
