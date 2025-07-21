@@ -10,8 +10,10 @@ const NavbarLink = ({ label, href }) => {
   return (
     <Link
       href={href}
-      className={`text-sm md:text-lg px-2 py-2 transition-colors text-white ${
-        isActive ? "font-extrabold border-b-2 border-white" : "text-gray-700 hover:text-secondary"
+      className={`text-sm lg:text-lg px-2 py-2 transition-colors text-white ${
+        isActive
+          ? "font-extrabold border-b-2 border-white"
+          : "text-gray-700 hover:text-secondary"
       }`}
     >
       {label}
