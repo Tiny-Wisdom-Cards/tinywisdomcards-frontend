@@ -5,6 +5,7 @@ import Discover from "@/components/Discover";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Partners from "@/components/Partners";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <About />
       <CardOfTheDay />
       <Partners />
+      <Testimonials />
     </>
   );
 }
