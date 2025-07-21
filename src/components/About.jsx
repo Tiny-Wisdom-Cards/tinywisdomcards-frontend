@@ -6,6 +6,7 @@ const About = () => {
       <div className="max-w-[1400px] mx-auto flex items-center justify-around flex-wrap lg:flex-no-wrap gap-20">
         <Image
           src="/images/stacked-cards.png"
+          alt="Stacked Cards"
           height={1200}
           width={1200}
           className="w-[348px]"
