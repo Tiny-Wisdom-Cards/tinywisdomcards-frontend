@@ -9,6 +9,7 @@ import Partners from "@/components/Partners";
 import Testimonials from "@/components/Testimonials";
 import VideoPromo from "@/components/VideoPromo";
 import Footer from "@/components/Footer";
+import CopyrightBanner from "@/components/CopyrightBanner";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <OurCollection />
       <VideoPromo />
       <Footer />
+      <CopyrightBanner />
     </>
   );
 }

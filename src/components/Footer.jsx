@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-light text-white py-8 px-4">
+    <footer className="bg-primary-light text-white pt-8 pb-3 px-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-[1280px] mx-auto">
         <div className="flex justify-center items-center lg:justify-start lg:items-start">
           <Image
@@ -99,6 +99,20 @@ const Footer = () => {
             ></iframe>
           </div>
         </div>
+      </div>
+      <div className="max-w-[1280px] mx-auto mt-1 text-center">
+        <ul className="flex justify-center items-center space-x-10 text-white text-base">
+          <li>
+            <a href="#" className="hover:underline">
+              Privacy
+            </a>
+          </li>
+          <li>
+            <a href="#" className="hover:underline">
+              Pricing and Charges
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   );
