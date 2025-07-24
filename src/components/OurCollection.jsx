@@ -78,11 +78,11 @@ export default function OurCollection() {
           </Swiper>
 
           {/* Custom Arrows */}
-          <div className="custom-prev absolute -left-[72px] top-1/2 transform -translate-y-1/2 border-2 border-white w-10 h-10 rounded-full flex items-center justify-center cursor-pointer shadow ">
-            <ChevronLeftIcon className="text-white w-6 h-6" />
+          <div className="custom-prev absolute -left-[108px] top-1/2 transform -translate-y-1/2 border-2 border-white w-12 h-12 rounded-full hidden lg:flex items-center justify-center cursor-pointer shadow">
+            <ChevronLeftIcon className="text-white w-8 h-8" />
           </div>
-          <div className="custom-next absolute -right-[72px] top-1/2 transform -translate-y-1/2 border-2 border-white w-10 h-10 rounded-full flex items-center justify-center cursor-pointer shadow ">
-            <ChevronRightIcon className="text-white w-6 h-6" />
+          <div className="custom-next absolute -right-[108px] top-1/2 transform -translate-y-1/2 border-2 border-white w-12 h-12 rounded-full hidden lg:flex items-center justify-center cursor-pointer shadow">
+            <ChevronRightIcon className="text-white w-8 h-8" />
           </div>
         </div>
 

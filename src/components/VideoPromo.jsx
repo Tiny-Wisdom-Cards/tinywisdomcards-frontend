@@ -20,10 +20,10 @@ const VideoPromo = () => {
             height="315"
             src="https://www.youtube.com/embed/-w53i6Ae-YM?si=rXByq-_BjALfU6-b"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
             className="w-full h-[528px] rounded-lg shadow-lg"
           ></iframe>
         </div>
