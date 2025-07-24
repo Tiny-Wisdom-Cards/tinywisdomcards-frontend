@@ -50,14 +50,14 @@ export default function OurCollection() {
                       className="rounded shadow-lg w-80"
                     />
                   </div>
-                  <div className="text-left md:w-1/2">
+                  <div className="text-center md:text-left md:w-1/2">
                     <h3 className="text-secondary-light text-3xl md:text-5xl font-semibold mb-4">
                       {item.title}
                     </h3>
                     <p className="text-lg text-white mb-6">
                       {item.description}
                     </p>
-                    <div className="flex items-center gap-3 mb-8">
+                    <div className="flex items-center justify-center md:justify-start gap-3 mb-8">
                       <span className="text-white text-3xl md:text-5xl font-bold">
                         {item.price}
                       </span>
