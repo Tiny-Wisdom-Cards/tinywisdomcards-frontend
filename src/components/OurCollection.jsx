@@ -51,7 +51,7 @@ export default function OurCollection() {
                     />
                   </div>
                   <div className="text-left md:w-1/2">
-                    <h3 className="text-secondary text-3xl md:text-5xl font-semibold mb-4">
+                    <h3 className="text-secondary-light text-3xl md:text-5xl font-semibold mb-4">
                       {item.title}
                     </h3>
                     <p className="text-lg text-white mb-6">
