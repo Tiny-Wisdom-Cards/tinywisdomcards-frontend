@@ -1,4 +1,4 @@
-// import BulkOrderForm from "@/components/BulkOrderForm"
+import BulkOrderForm from "@/components/BulkOrderForm"
 // import Footer from "@/components/Footer"
 import BulkOrderHero from "@/components/BulkOrderHero"
 import Wholesale from "@/components/Wholesale"
@@ -25,7 +25,7 @@ export default function BulkOrderPage() {
       <Partnership />
 
       {/* Request Bulk Order */}
-      {/* <BulkOrderForm/> */}
+      <BulkOrderForm/>
 
       {/* Footer */}
       {/* <Footer/> */}
