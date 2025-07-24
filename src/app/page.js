@@ -7,6 +7,7 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Partners from "@/components/Partners";
 import Testimonials from "@/components/Testimonials";
+import VideoPromo from "@/components/VideoPromo";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
       <Partners />
       <Testimonials />
       <OurCollection />
+      <VideoPromo />
     </>
   );
 }
