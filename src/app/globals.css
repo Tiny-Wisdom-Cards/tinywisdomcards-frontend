@@ -1,23 +1,66 @@
 @import "tailwindcss";
 
-@theme{
-  --color-primary: #1A2231;
-  --color-primary-light: #21293B;
-  --color-secondary: #D84824;
+@theme {
+  --color-primary: #1a2231;
+  --color-primary-light: #21293b;
+  --color-primary-dark: #152038;
+  --color-secondary: #d84824;
 }
 
-h1,h2,h3,h4,h5,h6,h1{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 {
   font-family: var(--font-playfair);
 }
 
-p,a,span,button{
+p,
+a,
+span,
+button {
   font-family: var(--font-poppins);
 }
 
-h1 span{
+h1 span {
   font-family: var(--font-playfair);
 }
 
 .bg-gray-overlay {
-  background: linear-gradient(90deg, rgba(141, 141, 141, 0.2) 30.29%, rgba(141, 141, 141, 0.2) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(141, 141, 141, 0.2) 30.29%,
+    rgba(141, 141, 141, 0.2) 100%
+  );
+}
+
+.swiper-pagination-bullet {
+  background: #fff !important;
+  height: 14px !important;
+  width: 14px !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff6f43 !important;
+  height: 14px !important;
+  width: 30px !important;
+  border-radius: 29px !important;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  background: #ff6f43;
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background: #ffffff;
+  width: 12px;
+  height: 12px;
 }
