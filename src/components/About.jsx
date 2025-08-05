@@ -2,8 +2,8 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="bg-primary py-16 md:py-24 px-2 md:px-8">
-      <div className="max-w-[1280px] mx-auto flex items-center justify-around flex-wrap lg:flex-no-wrap gap-20">
+    <section className="bg-primary">
+      <div className="max-w-[1280px] mx-auto px-4 md:px-6 py-16 md:py-24 flex items-center justify-around flex-wrap lg:flex-no-wrap gap-20">
         <Image
           src="/images/stacked-cards.png"
           alt="Stacked Cards"

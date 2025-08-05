@@ -25,7 +25,7 @@ const Navbar = () => {
         isScrolled ? "bg-primary/90 shadow-md" : "bg-gray-overlay opacity-95"
       }`}
     >
-      <div className="max-w-[1280px] mx-auto px-4 py-2 sm:px-6 lg:px-8">
+      <div className="max-w-[1280px] mx-auto px-4 py-2 sm:px-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0">

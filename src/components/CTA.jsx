@@ -1,6 +1,6 @@
 const CtaSection = () => {
   return (
-    <section className="bg-primary-light py-8 px-2 lg:px-8">
+    <section className="bg-primary-light py-8 px-4 sm:px-6">
       <div className="max-w-[1280px] mx-auto text-center">
         <h2 className="text-3xl md:text-6xl text-white font-medium text-center">
           Beyond the Cards
