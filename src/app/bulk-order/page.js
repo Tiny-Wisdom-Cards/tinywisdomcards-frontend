@@ -1,10 +1,10 @@
-import BulkOrderForm from "@/components/BulkOrderForm"
+import BulkOrderForm from "@/components/BulkOrderForm";
 // import Footer from "@/components/Footer"
-import BulkOrderHero from "@/components/BulkOrderHero"
-import Wholesale from "@/components/Wholesale"
-import Partnership from "@/components/Partnership"
-import Navbar from "@/components/Navbar"
-
+import BulkOrderHero from "@/components/BulkOrderHero";
+import Wholesale from "@/components/Wholesale";
+import Partnership from "@/components/Partnership";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export default function BulkOrderPage() {
   return (
@@ -25,10 +25,10 @@ export default function BulkOrderPage() {
       <Partnership />
 
       {/* Request Bulk Order */}
-      <BulkOrderForm/>
+      <BulkOrderForm />
 
       {/* Footer */}
-      {/* <Footer/> */}
+      <Footer />
     </div>
-  )
+  );
 }
