@@ -14,8 +14,8 @@ const BulkOrderForm = () => {
   };
 
   return (
-    <section className="py-16 px-4 sm:px-6">
-      <div className="bg-primary-light max-w-[1280px] mx-auto rounded-lg shadow-lg">
+    <section className="py-16 px-4 sm:px-6 max-w-[1280px] mx-auto">
+      <div className="bg-primary-light rounded-lg shadow-lg">
         <div className="p-16">
           {/* Header */}
           <div className="mb-8">
