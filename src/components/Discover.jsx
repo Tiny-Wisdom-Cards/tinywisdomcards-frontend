@@ -3,7 +3,7 @@ import DiscoverDeck from "./DiscoverDeck";
 
 const Discover = () => {
   return (
-    <section className="py-10 px-4 sm:px-6 bg-primary">
+    <section id="the-deck" className="py-16 px-4 sm:px-6 bg-primary">
       <div className="max-w-[1280px] mx-auto">
         <div>
           <div className="relative pb-7">

@@ -9,8 +9,23 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export default function OurCollection() {
+
+  const handleWhatsAppClick = (item) => {
+    console.log(item)
+    const message = `Hello, I would like to book a Tiny Wisdom Card with the following details:
+        - Title: ${item.title}
+        - Description: ${item.description}
+        - Price: ${item.price}
+        - Original Price: $${item.originalPrice}`;
+
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=9779866104387&text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+
+
   return (
-    <section className="bg-primary-light py-16 px-4">
+    <section id="collection" className="bg-primary-light py-16 px-4">
       <div className="max-w-[1280px] mx-auto text-center relative">
         <div className="relative pb-7">
           <h2 className="text-3xl md:text-6xl text-white font-medium text-center">
@@ -65,9 +80,16 @@ export default function OurCollection() {
                         {item.originalPrice}
                       </span>
                     </div>
-                    <button className="bg-secondary text-white px-8 py-4 rounded-xl hover:cursor-pointer hover:opacity-90 transition">
+                    {/* <button className="bg-secondary text-white px-8 py-4 rounded-xl hover:cursor-pointer hover:opacity-90 transition">
+                      {item.buttonText}
+                    </button> */}
+                    <button
+                      className="bg-secondary text-white px-8 py-4 rounded-xl hover:cursor-pointer hover:opacity-90 transition"
+                      onClick={()=>handleWhatsAppClick(item)}
+                    >
                       {item.buttonText}
                     </button>
+
                     <p className="text-sm font-light text-white italic mt-5">
                       {item.deliveryNote}
                     </p>

@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="max-w-[1280px] mx-auto px-4 py-2 sm:px-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <Link href="/" className="flex-shrink-0 ">
             <Image
               src="/images/logo.svg"
               alt="Tiny Wisdom Logo"
@@ -36,7 +36,7 @@ const Navbar = () => {
               height={40}
               className="w-32 lg:w-44"
             />
-          </div>
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden lg:flex space-x-3 lg:space-x-7 items-center">
@@ -44,10 +44,10 @@ const Navbar = () => {
               <NavbarLink key={link.href} {...link} />
             ))}
             <Link
-              href="/collection"
+              href="/#collection"
               className="text-sm lg:text-lg px-8 py-2 bg-secondary rounded-full font-semibold transition-colors text-white"
             >
-              Collection
+              Order Now
             </Link>
           </div>
 
@@ -66,16 +66,16 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       {menuOpen && (
-        <div className="lg:hidden bg-primary text-white px-6 pt-1 pb-3 space-y-4">
+        <div className="lg:hidden h-screen bg-primary text-white px-6 pt-1 pb-3 space-y-4">
           <div className="flex flex-col text-center w-fit mx-auto">
             {NAV_LINKS.map((link) => (
               <NavbarLink key={link.href} {...link} />
             ))}
             <Link
-              href="/collection"
+              href="/#collection"
               className="block text-center text-sm px-6 py-2 bg-secondary rounded-full font-semibold text-white"
             >
-              Collection
+              Order Now
             </Link>
           </div>
         </div>

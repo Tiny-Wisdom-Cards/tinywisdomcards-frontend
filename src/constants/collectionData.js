@@ -10,15 +10,15 @@ export const COLLECTIONDATA = [
     buttonText: "Prebook Now",
     deliveryNote: "*Delivery charge may vary according to the location",
   },
-  {
-    id: 2,
-    imagePath: "/images/stacked-cards.png",
-    title: "The DIY Book",
-    description:
-      "The complete collection. 30 cards and a guide book in a keepsake box.",
-    price: "8 USD",
-    originalPrice: "12 USD",
-    buttonText: "Prebook Now",
-    deliveryNote: "*Delivery charge may vary according to the location",
-  },
+  // {
+  //   id: 2,
+  //   imagePath: "/images/stacked-cards.png",
+  //   title: "The DIY Book",
+  //   description:
+  //     "The complete collection. 30 cards and a guide book in a keepsake box.",
+  //   price: "8 USD",
+  //   originalPrice: "12 USD",
+  //   buttonText: "Prebook Now",
+  //   deliveryNote: "*Delivery charge may vary according to the location",
+  // },
 ];
