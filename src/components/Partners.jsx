@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Partners = () => {
   return (
-    <section className="px-4 sm:px-6 py-8 bg-primary">
+    <section id="community" className="px-4 sm:px-6 py-8 bg-primary">
       <div className="max-w-[1280px] mx-auto">
         <div>
           <div className="relative pb-7">
