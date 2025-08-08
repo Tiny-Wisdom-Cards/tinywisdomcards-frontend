@@ -72,14 +72,17 @@ export default function OurCollection() {
                     <p className="text-lg text-white mb-6">
                       {item.description}
                     </p>
-                    <div className="flex items-center justify-center md:justify-start gap-3 mb-8">
-                      <span className="text-white text-3xl md:text-5xl font-bold">
+                    <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
+                      <span className="text-white text-3xl md:text-4xl font-bold">
                         {item.price}
                       </span>
-                      <span className="text-white line-through text-3xl md:text-5xl font-bold">
+                      <span className="text-white line-through text-3xl md:text-4xl font-bold">
                         {item.originalPrice}
                       </span>
                     </div>
+                    <p className="text-white text-lg mb-4">
+                      + Free T-Shirt👕
+                    </p>
                     {/* <button className="bg-secondary text-white px-8 py-4 rounded-xl hover:cursor-pointer hover:opacity-90 transition">
                       {item.buttonText}
                     </button> */}

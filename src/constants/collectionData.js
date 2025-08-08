@@ -5,7 +5,7 @@ export const COLLECTIONDATA = [
     title: "Tiny Wisdom Card Deck",
     description:
       "The complete collection. 30 cards and a guide book in a keepsake box.",
-    price: "300 NPR + (Tshirt👕)",
+    price: "300 NPR",
     originalPrice: "350 NPR",
     buttonText: "Prebook Now",
     deliveryNote: "*Delivery charge may vary according to the location",
