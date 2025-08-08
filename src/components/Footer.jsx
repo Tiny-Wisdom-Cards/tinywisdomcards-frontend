@@ -42,7 +42,7 @@ const Footer = () => {
           <h3 className="text-2xl text-white">Follow Us</h3>
           <ul className="flex gap-2.5 items-center text-white mt-4">
             <li>
-              <a href="#" className="text-white hover:underline">
+              <a href="https://instagram.com/tinywisdomcards" className="text-white hover:underline" target="_blank">
                 <Image
                   src="/icons/insta.svg"
                   alt="Instagram Icon"
@@ -53,7 +53,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="text-white hover:underline">
+              <a href="https://www.facebook.com/profile.php?id=61578164027295" className="text-white hover:underline" target="_blank">
                 <Image
                   src="/icons/facebook.svg"
                   alt="Instagram Icon"
@@ -64,7 +64,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="text-white hover:underline">
+              <a href="https://www.tiktok.com/@tinywisdomcards" className="text-white hover:underline" target="_blank">
                 <Image
                   src="/icons/tiktok.svg"
                   alt="TikTok Icon"
@@ -103,15 +103,15 @@ const Footer = () => {
       <div className="max-w-[1280px] mx-auto mt-1 text-center">
         <ul className="flex justify-center items-center space-x-10 text-white text-base">
           <li>
-            <a href="#" className="hover:underline">
-              Privacy
+            <a href="/privacy-policy" target="_blank" className="hover:underline">
+              Privacy and Policy
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#" className="hover:underline">
               Pricing and Charges
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </footer>

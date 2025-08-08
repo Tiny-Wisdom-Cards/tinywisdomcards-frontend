@@ -19,7 +19,7 @@ const BulkOrderForm = () => {
         - Whatsapp Number: ${data.whatsapp}
         - Message: ${data.message}`
 
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=9779866104387&text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=9779705812368&text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
     // You can now send `data` to your backend or API endpoint
     // fetch('/api/bulk-order', { method: 'POST', body: JSON.stringify(data) })
