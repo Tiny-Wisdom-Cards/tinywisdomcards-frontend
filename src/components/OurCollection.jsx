@@ -18,7 +18,7 @@ export default function OurCollection() {
         - Price: ${item.price}
         - Original Price: $${item.originalPrice}`;
 
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=9779866104387&text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=9779705812368&text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
 
