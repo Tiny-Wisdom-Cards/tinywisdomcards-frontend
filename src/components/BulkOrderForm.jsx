@@ -203,7 +203,7 @@ const BulkOrderForm = () => {
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300">
                   <EnvelopeIcon className="w-5 h-5" />
-                  <span>hello@tinywisdomcards.com</span>
+                  <a href = "mailto:tinywisdomcard@gmail.com">tinywisdomcard@gmail.com</a>
                 </div>
                 <div className="flex items-start space-x-3 text-gray-300">
                   <MapPinIcon className="w-5 h-5 mt-1 flex-shrink-0" />

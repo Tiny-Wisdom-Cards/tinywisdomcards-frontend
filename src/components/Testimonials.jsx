@@ -18,15 +18,15 @@ const Testimonials = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <TestimonialCard
-            name="Bibek Torello"
+            name="Sita Poudel"
             title="Single Mother"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+            description="TinyWisdom Cards have become a little daily ritual for me and my family. Every morning, we pick a card, read its words, and somehow, it always feels like the message is exactly what we needed that day. They’re beautiful to look at, but more than that, they carry this quiet magic—reminding us to pause, breathe, and see the world with softer eyes. It’s amazing how something so small can create such big moments of connection and clarity."
             imageUrl="/testimonials/1.png"
           />
           <TestimonialCard
-            name="Mike Roshan"
+            name="Sabina Timilsina"
             title="Educator"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."
+            description="TinyWisdom Cards turn small moments into gentle reminders to slow down and cherish life. I’m obsessed."
             imageUrl="/testimonials/2.png"
           />
         </div>
