@@ -82,10 +82,10 @@ const Footer = () => {
             Tinkune, Subidhanagar 44600, Kathmandu, Nepal
           </p>
           <a
-            href="mailto:hello@tinywisdomcards.com"
+            href="mailto:tinywisdomcards@gmail.com"
             className="text-white mt-3"
           >
-            hello@tinywisdomcards.com
+            tinywisdomcards@gmail.com
           </a>
           <div className="mt-8">
             <iframe
