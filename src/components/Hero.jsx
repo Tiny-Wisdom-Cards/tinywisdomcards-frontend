@@ -126,6 +126,9 @@ const staticCardImage = "/hero/5.png";
 
 const CARD_WIDTH = 200;
 const CARD_HEIGHT = 300;
+const SM_CARD_WIDTH = 150;
+const SM_CARD_HEIGHT = 250;
+
 const ORBIT_RADIUS = 100;
 
 const Hero = () => {
@@ -164,9 +167,9 @@ const Hero = () => {
             </button>
           </Link>
         </div>
-{/* 
-        <div className="flex-shrink-0 md:hidden">
-           <Image
+
+        {/* <div className="flex-shrink-0 md:hidden">
+          <Image
             src="/images/hero-img.png"
             alt="Hero Image"
             width={490}
@@ -176,6 +179,42 @@ const Hero = () => {
             blurDataURL="/images/placeholder.png"
           />
         </div> */}
+        <div className="relative md:hidden w-full h-[420px] md:w-[450px] md:h-[500px] flex-shrink-0 flex items-center justify-center">
+          {bgCardImages.map((src, index) => {
+            const increaseangle = angle + (index * (2 * Math.PI / bgCardImages.length));
+            const x = ORBIT_RADIUS * Math.cos(increaseangle);
+            const y = ORBIT_RADIUS * Math.sin(increaseangle);
+            return (
+              <Image
+                key={src}
+                src={src}
+                alt={`Card ${index + 1}`}
+                width={SM_CARD_WIDTH}
+                height={SM_CARD_HEIGHT}
+                className="absolute left-1/2 top-1/2 shadow-xl rounded-[24px] bg-white"
+                style={{
+                  transform: `translate(-50%, -50%) translate(${x}px, ${y}px) rotate(${(increaseangle * 180 / Math.PI) + 10}deg)`,
+                  opacity: 0.93,
+                  zIndex: 10 + index,
+                  transition: "box-shadow 0.2s"
+                }}
+                draggable={false}
+              />
+            );
+          })}
+          <Image
+            src={staticCardImage}
+            alt="Main Card"
+            width={SM_CARD_WIDTH}
+            height={SM_CARD_HEIGHT}
+            className="absolute left-1/2 top-1/2 shadow-2xl rounded-[24px] bg-white z-50"
+            style={{
+              transform: "translate(-50%, -50%)",
+            }}
+            draggable={false}
+          />
+        </div>
+
 
         <div className="relative hidden w-[320px] h-[420px] md:w-[450px] md:h-[500px] flex-shrink-0 md:flex items-center justify-center">
           {bgCardImages.map((src, index) => {

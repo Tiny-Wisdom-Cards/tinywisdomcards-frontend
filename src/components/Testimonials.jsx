@@ -2,7 +2,7 @@ import TestimonialCard from "./TestimonialCard";
 
 const Testimonials = () => {
   return (
-    <section className="px-4 sm:px-6 py-16 md:py-20 bg-primary">
+    <section id="community" className="px-4 sm:px-6 py-16 md:py-20 bg-primary">
       <div className="max-w-[1280px] mx-auto">
         <div className="text-center mb-12">
           <div className="relative pb-7">

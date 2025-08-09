@@ -17,22 +17,22 @@ const Footer = () => {
           <h3 className="text-2xl text-white">Explore</h3>
           <ul className="flex flex-col space-y-2.5 mt-4">
             <li className="flex justify-center items-center lg:justify-start">
-              <a href="#" className="text-white hover:underline ">
+              <a href="/#the-deck" className="text-white hover:underline ">
                 The Deck
               </a>
             </li>
             <li className="flex justify-center items-center lg:justify-start">
-              <a href="#" className="text-white hover:underline ">
+              <a href="/bulk-order" className="text-white hover:underline ">
                 Bulk Order
               </a>
             </li>
             <li className="flex justify-center items-center lg:justify-start">
-              <a href="#" className="text-white hover:underline ">
+              <a href="/#card-of-the-day" className="text-white hover:underline ">
                 Card Of the Day
               </a>
             </li>
             <li className="flex justify-center items-center lg:justify-start">
-              <a href="#" className="text-white hover:underline ">
+              <a href="/#community" className="text-white hover:underline ">
                 Community
               </a>
             </li>
