@@ -7,16 +7,46 @@ import { COLLECTIONDATA } from "@/constants/collectionData";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useEffect, useState } from "react";
+
 
 export default function OurCollection() {
+
+  const [userCountry, setUserCountry] = useState();
+
+  const fetchUserCountry = async () => {
+    try {
+      const response = await fetch("https://api.ipify.org?format=json");
+      const data = await response.json();
+      const userIP = data.ip;
+
+      const countryResponse = await fetch(
+        `https://ipapi.co/${userIP}/country/`
+      );
+      const country = await countryResponse.text();
+
+      setUserCountry(country);
+    } catch (error) {
+      console.error("Error fetching user country:", error);
+    }
+  };
+
+  console.log(userCountry)
+
+
+  useEffect(() => {
+    fetchUserCountry();
+  }, []);
+
+
 
   const handleWhatsAppClick = (item) => {
     console.log(item)
     const message = `Hello, I would like to book a Tiny Wisdom Card with the following details:
         - Title: ${item.title}
         - Description: ${item.description}
-        - Price: ${item.price}
-        - Original Price: $${item.originalPrice}`;
+        - Price For You: ${userCountry == 'NP' ? item.price : item.dollor_price}
+        - Original Price: ${userCountry == 'NP' ? item.originalPrice : item.dollorOriginalPrice}`;
 
     const whatsappUrl = `https://api.whatsapp.com/send?phone=9779705812368&text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -37,6 +67,7 @@ export default function OurCollection() {
           Bring home a piece of the legacy. Choose from our signature card deck,
           digital wallpapers, or our new DIY coloring book.
         </p>
+       
 
         <div className="relative mt-10 max-w-3xl mx-auto">
           <Swiper
@@ -74,10 +105,16 @@ export default function OurCollection() {
                     </p>
                     <div className="flex items-center justify-center md:justify-start gap-3 mb-4">
                       <span className="text-white text-3xl md:text-4xl font-bold">
-                        {item.price}
+                        {
+                          userCountry == 'NP' ? item.price : item.dollor_price
+                        }
+                        {/* {item.price} */}
                       </span>
                       <span className="text-white line-through text-3xl md:text-4xl font-bold">
-                        {item.originalPrice}
+                        {/* {item.originalPrice} */}
+                        {
+                          userCountry == 'NP' ? item.originalPrice : item.dollorOriginalPrice
+                        }
                       </span>
                     </div>
                     <p className="text-white text-lg mb-4">
@@ -88,7 +125,7 @@ export default function OurCollection() {
                     </button> */}
                     <button
                       className="bg-secondary text-white px-8 py-4 rounded-xl hover:cursor-pointer hover:opacity-90 transition"
-                      onClick={()=>handleWhatsAppClick(item)}
+                      onClick={() => handleWhatsAppClick(item)}
                     >
                       {item.buttonText}
                     </button>
