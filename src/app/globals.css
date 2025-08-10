@@ -28,7 +28,7 @@ h1 {
 p,
 a,
 span,
-button, strong, ul, li {
+button, strong, ul, li, label,input,textarea {
   font-family: var(--font-poppins);
 }
 

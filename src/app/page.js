@@ -26,7 +26,7 @@ export default function Home() {
       {/* <Partners /> */}
       <Testimonials />
       <OurCollection />
-      {/* <VideoPromo /> */}
+      <VideoPromo />
       <Footer />
       <CopyrightBanner />
     </>

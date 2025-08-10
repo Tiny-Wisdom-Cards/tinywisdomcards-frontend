@@ -191,7 +191,7 @@ const BulkOrderForm = () => {
               <div className="space-y-6">
                 <div className="flex items-center space-x-3 text-gray-300">
                   <PhoneIcon className="w-5 h-5" />
-                  <span>+977 9866104387</span>
+                  <span>+977 9705812368</span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300">
                   <PhoneIcon className="w-5 h-5" />
