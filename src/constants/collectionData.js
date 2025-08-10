@@ -4,7 +4,7 @@ export const COLLECTIONDATA = [
     imagePath: "/images/stacked-cards.png",
     title: "Tiny Wisdom Card Deck",
     description:
-      "The complete collection. 30 cards and a guide book in a keepsake box.",
+      "The complete collection. 31 cards and a guide book in a keepsake box.",
     price: "350 NPR",
     originalPrice: "400 NPR",
     dollor_price:"$19.99",

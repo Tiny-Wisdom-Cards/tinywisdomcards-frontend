@@ -18,14 +18,25 @@ const VideoPromo = () => {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/-w53i6Ae-YM?si=rXByq-_BjALfU6-b"
+            src="https://www.youtube.com/embed/kdJ90AgYsGE?si=1FRwtRh_dP2m0XHf"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            className="w-full h-[528px] rounded-lg shadow-lg"
+          ></iframe>
+          {/* <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/watch?v=kdJ90AgYsGE"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
             className="w-full h-[528px] rounded-lg shadow-lg"
-          ></iframe>
+          ></iframe> */}
         </div>
       </div>
     </section>
