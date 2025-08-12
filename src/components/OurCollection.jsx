@@ -15,6 +15,7 @@ const PrebookModal = ({ item, onClose, handleWhatsAppClick }) => {
     name: "",
     email: "",
     phone: "",
+    quantity: "",
     message: "",
   });
 
@@ -38,7 +39,7 @@ const PrebookModal = ({ item, onClose, handleWhatsAppClick }) => {
       className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center"
     >
       <div className="bg-primary-dark relative rounded-lg shadow-lg w-full max-w-4xl overflow-y-auto h-[90vh] md:h-fit">
-        <p className="text-white hover:cursor-pointer p-2 absolute top-4 md:top-6 right-6 md:right-8" onClick={onClose}><ImCross size={12}/></p> 
+        <p className="text-white hover:cursor-pointer p-2 absolute top-4 md:top-6 right-6 md:right-8" onClick={onClose}><ImCross size={12} /></p>
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 p-6 flex flex-col items-center justify-center">
             <Image
@@ -88,12 +89,23 @@ const PrebookModal = ({ item, onClose, handleWhatsAppClick }) => {
                 className="border border-white/20 text-white placeholder-white/60 bg-transparent rounded px-4 py-2 w-full"
                 required
               />
+
               <input
                 type="tel"
                 placeholder="Phone Number"
                 value={formData.phone}
                 onChange={(e) =>
                   setFormData({ ...formData, phone: e.target.value })
+                }
+                className="border border-white/20 text-white placeholder-white/60 bg-transparent rounded px-4 py-2 w-full"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Quantity"
+                value={formData.quantity}
+                onChange={(e) =>
+                  setFormData({ ...formData, quantity: e.target.value })
                 }
                 className="border border-white/20 text-white placeholder-white/60 bg-transparent rounded px-4 py-2 w-full"
                 required
@@ -140,14 +152,15 @@ export default function OurCollection() {
       - Title: ${item.title}
       - Description: ${item.description}
       - Price For You: ${userCountry == "NP" ? item.price : item.dollor_price
-            }
+      }
       - Original Price: ${userCountry == "NP" ? item.originalPrice : item.dollorOriginalPrice
-            }
+      }
 
       Customer Details:
       - Name: ${formData.name}
       - Email: ${formData.email}
       - Phone: ${formData.phone}
+      - Quantity: ${formData.quantity}
       - Delivery Location: ${formData.message}
       `;
 
