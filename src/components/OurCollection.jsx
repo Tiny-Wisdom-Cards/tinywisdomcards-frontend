@@ -151,10 +151,9 @@ export default function OurCollection() {
 
       - Title: ${item.title}
       - Description: ${item.description}
-      - Price For You: ${userCountry == "NP" ? item.price : item.dollor_price
+      - Price: ${userCountry == "NP" ? item.price : item.dollor_price
       }
-      - Original Price: ${userCountry == "NP" ? item.originalPrice : item.dollorOriginalPrice
-      }
+   
 
       Customer Details:
       - Name: ${formData.name}
