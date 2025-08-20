@@ -56,9 +56,9 @@ const PrebookModal = ({ item, onClose, handleWhatsAppClick }) => {
 
             <div className="flex items-center gap-2 mt-4">
               <span className="text-white text-2xl font-bold">{item.price}</span>
-              <span className="text-white line-through text-lg">
+              {/* <span className="text-white line-through text-lg">
                 {item.originalPrice}
-              </span>
+              </span> */}
             </div>
 
             <p className="text-gray-400 text-sm mt-2">{item.deliveryNote}</p>
@@ -243,13 +243,13 @@ export default function OurCollection() {
                       <span className="text-white text-3xl md:text-4xl font-bold">
                         {userCountry == "NP" ? item.price : item.dollor_price}
                       </span>
-                      <span className="text-white line-through text-3xl md:text-4xl font-bold">
+                      {/* <span className="text-white line-through text-3xl md:text-4xl font-bold">
                         {userCountry == "NP"
                           ? item.originalPrice
                           : item.dollorOriginalPrice}
-                      </span>
+                      </span> */}
                     </div>
-                    <p className="text-white text-lg mb-4">+ Free T-Shirt👕</p>
+                    <p className="text-white line-through text-md mb-4">+ Free T-Shirt👕 (Pre Order Closed)</p>
 
                     <button
                       className="bg-secondary text-white px-8 py-4 rounded-xl hover:cursor-pointer hover:opacity-90 transition"
