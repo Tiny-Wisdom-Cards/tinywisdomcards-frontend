@@ -6,7 +6,7 @@ export const COLLECTIONDATA = [
     description:
       "The complete collection. 31 cards and a guide book in a keepsake box.",
     price: "350 NPR",
-    originalPrice: "400 NPR",
+    originalPrice: "499 NPR",
     dollor_price:"$19.99",
     dollorOriginalPrice: "$25",
     buttonText: "Prebook Now",
