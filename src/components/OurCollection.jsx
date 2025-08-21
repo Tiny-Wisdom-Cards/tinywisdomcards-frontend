@@ -66,7 +66,7 @@ const PrebookModal = ({ item, onClose, handleWhatsAppClick }) => {
 
           <div className="md:w-1/2 p-6">
             <h4 className="text-secondary-light text-2xl font-semibold mb-4">
-              Prebook Now
+              Book Now
             </h4>
             <form onSubmit={handleSubmit} className="grid gap-4">
               <input
@@ -147,7 +147,7 @@ export default function OurCollection() {
   const [selectedItem, setSelectedItem] = useState(null);
 
   const handleWhatsAppClick = (item, formData) => {
-    const message = `Hello, I would like to prebook the following item:
+    const message = `Hello, I would like to book the following item:
 
       - Title: ${item.title}
       - Description: ${item.description}
