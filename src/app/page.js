@@ -23,7 +23,7 @@ export default function Home() {
       <CtaSection />
       <About />
       <CardOfTheDay />
-      {/* <Partners /> */}
+      <Partners />
       <Testimonials />
       <OurCollection />
       <VideoPromo />
