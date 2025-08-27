@@ -1,5 +1,6 @@
 import { Playfair_Display, Poppins } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -72,6 +73,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-K1RB7B496K"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-K1RB7B496K');
+          `}
+      </Script>
       <body className={`${playfair.variable} ${poppins.variable} antialiased`}>
         {children}
       </body>
